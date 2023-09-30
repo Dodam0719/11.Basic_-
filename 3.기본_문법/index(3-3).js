@@ -17,3 +17,17 @@ console.log(typeof nu); // object
 console.log(typeof bool); // boolean
 console.log(typeof num); // number
 console.log(typeof str); // string
+
+const obj = {
+  name: "jang",
+};
+
+const arr = ["jang"];
+
+function func() {
+  return "jang";
+}
+
+console.log(typeof obj); // object
+console.log(typeof arr); // object
+console.log(typeof func); // function
