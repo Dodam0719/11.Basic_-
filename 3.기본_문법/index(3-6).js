@@ -1,17 +1,16 @@
-let count1 = 0;
-count1++; // 단항연산자. 그 중에서도 증가연산자
-count1++;
-count1++;
-count1++;
-count1++;
+// && 연산자
+var a1 = true && true; // t && t는 true 반환
+var a2 = true && false; // t && f는 false 반환
+var a3 = false && true; // f && t는 false 반환
+var a4 = false && 3 == 4; // f && f는 false 반환
+var a5 = "Cat" && "Dog"; // t && t는 Dog 반환
+var a6 = false && "Cat"; // f && t는 false 반환
+var a7 = "Cat" && false; // t && f는 false 반환
 
-console.log(count1); // 5
-
-let count2 = 0;
-count2--; // 단항연산자. 그 중에서도 감소연산자
-count2--; // 단항연산자. 그 중에서도 감소연산자
-count2--; // 단항연산자. 그 중에서도 감소연산자
-count2--; // 단항연산자. 그 중에서도 감소연산자
-count2--; // 단항연산자. 그 중에서도 감소연산자
-
-console.log(count2); // -5
+console.log(a1); // true
+console.log(a2); // false
+console.log(a3); // false
+console.log(a4); // false
+console.log(a5); // Dog
+console.log(a6); // false
+console.log(a7); // false
