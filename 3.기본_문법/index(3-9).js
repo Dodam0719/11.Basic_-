@@ -1,16 +1,12 @@
 // 함수 선언문
-function func(num) {
-  if (10 > num) {
-    return "Hello";
-  }
-  return undefined;
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+function multiple(num1, num2) {
+  return num1 * num2;
 }
 
 // 함수 호출
-console.log(func()); // undefined
-console.log(func(1)); // Hello
-console.log(func(2)); // Hello
-console.log(func(3)); // Hello
-console.log(func(4)); // Hello
-console.log(func(11)); // undefined
-console.log(func(33)); // undefined
+console.log(sum(1, 2)); // 3
+console.log(multiple(1, 2)); // 2
