@@ -1,14 +1,13 @@
-// && => and => 그리고!!
-// || => or => 또는!!
+// const 삼항연산자 = 조건부 ? '참일때' : '거짓일때';
 
-// ! 연산자
-var not1 = !true; // !t는 false 반환
-var not2 = !false; // !f는 true 반환
-var not3 = !"Cat"; // !t는 false 반환
+const temp = 1 === "1" ? "참일때" : "거짓일때";
 
-console.log(not1); // false
-console.log(not2); // true
-console.log(not3); // false
+// 아래 조건문을 위 삼항 연산자로 사용할 수도 있음
 
-not3 = !!"Cat"; // !! 두번 사용
-console.log(not3); // true
+let temp2;
+
+if (1 === "1") {
+  temp2 = "참일때";
+} else {
+  temp2 = "거짓일때";
+}
