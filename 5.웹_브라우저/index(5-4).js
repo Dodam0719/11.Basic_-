@@ -1,3 +1,5 @@
-console.log("in the js");
+const h2Element = document.querySelector("h2");
 
-console.dir(document.querySelector("body"));
+console.log(h2Element);
+
+h2Element.innerText = "안녕하세요";
