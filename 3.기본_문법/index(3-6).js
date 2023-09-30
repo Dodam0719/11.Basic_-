@@ -1,16 +1,16 @@
-// && 연산자
-var a1 = true && true; // t && t는 true 반환
-var a2 = true && false; // t && f는 false 반환
-var a3 = false && true; // f && t는 false 반환
-var a4 = false && 3 == 4; // f && f는 false 반환
-var a5 = "Cat" && "Dog"; // t && t는 Dog 반환
-var a6 = false && "Cat"; // f && t는 false 반환
-var a7 = "Cat" && false; // t && f는 false 반환
+// || 연산자
+var o1 = true || true; // t || t는 true 반환
+var o2 = false || true; // f || t는 true 반환
+var o3 = true || false; // t || f는 true 반환
+var o4 = false || 3 == 4; // f || f는 false 반환
+var o5 = "Cat" || "Dog"; // t || t는 Cat 반환
+var o6 = false || "Cat"; // f || t는 Cat 반환
+var o7 = "Cat" || false; // t || f는 Cat 반환
 
-console.log(a1); // true
-console.log(a2); // false
-console.log(a3); // false
-console.log(a4); // false
-console.log(a5); // Dog
-console.log(a6); // false
-console.log(a7); // false
+console.log(o1); // true
+console.log(o2); // true
+console.log(o3); // true
+console.log(o4); // false
+console.log(o5); // Cat
+console.log(o6); // Cat
+console.log(o7); // Cat
