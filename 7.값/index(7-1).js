@@ -2,19 +2,20 @@
  *
  * JS Type
  * - 원시(Primitive)
- * - 객체(Reference)
+ * - 객체, 참조(Reference)
  */
 
-let test = "string";
-console.log(test.toUpperCase()); // STRING
-console.log(test); // string
+const object = {};
+const array = [];
+function func() {}
 
-test = test.toUpperCase();
-console.log(test); // STRING
+console.log(object instanceof Object); // true
+console.log(array instanceof Array); // true
+console.log(func instanceof Function); // true
 
-let bool = false;
-console.log(!bool); // true
-console.log(bool); // fase
+console.log(Object.prototype.toString.call(object)); // [object Object]
+console.log(Object.prototype.toString.call(array)); // [object Array]
+console.log(Object.prototype.toString.call(func)); // [object Function]
 
-bool = !bool;
-console.log(bool); // true
+console.log(typeof array); // object
+console.log(typeof func); // function
