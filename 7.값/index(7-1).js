@@ -5,12 +5,14 @@
  * - 객체, 참조(Reference)
  */
 
-const object = {
-  name: "jang",
-  age: 11,
-  arr: [],
-  func: function () {},
-  child: {},
+const obj = {
+  str: "string",
 };
+obj.str.toUpperCase();
 
-const array = [[], 11, "jang", function () {}];
+console.log(obj); // { str: 'string' }
+
+obj.num = 123;
+obj.bool = true;
+
+console.log(obj); // { str: 'string', num: 123, bool: ture}
