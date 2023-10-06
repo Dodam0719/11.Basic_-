@@ -5,14 +5,11 @@
  * - 객체, 참조(Reference)
  */
 
-const obj = {
-  str: "string",
-};
-obj.str.toUpperCase();
+const arr = [1, 2, 3];
+console.log(arr[0]); // 1
+console.log(arr[1]); // 2
+console.log(arr[2]); // 3
 
-console.log(obj); // { str: 'string' }
+arr[3] = 1000;
 
-obj.num = 123;
-obj.bool = true;
-
-console.log(obj); // { str: 'string', num: 123, bool: ture}
+console.log(arr); // [ 1, 2, 3, 100]
