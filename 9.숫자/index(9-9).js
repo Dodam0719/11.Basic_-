@@ -4,7 +4,9 @@
 // 정의할 수 없는 결과식
 // 문자열이 포함된 계산식 (덧셈 제외)
 
+//자바스크립트에서는 자기자신과의 비교도 false로 반환(느슨하든 엄격하든)
 console.log(NaN === NaN); // false
+console.log(NaN == NaN); // false
 
 // 느슨하게 검사
 console.log(isNaN(undefined)); // true
